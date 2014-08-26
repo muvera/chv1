@@ -5,7 +5,15 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.2.*"
+
 	},
+	"require-dev": {
+    "way/generators": "2.*",
+    "intervention/image": "2.*",
+    "stripe/stripe-php": "v1.16.0",
+	"laracasts/validation": "~1.0"
+	},
+
 	"autoload": {
 		"classmap": [
 			"app/commands",
@@ -13,8 +21,16 @@
 			"app/models",
 			"app/database/migrations",
 			"app/database/seeds",
-			"app/tests/TestCase.php"
-		]
+			"app/tests/TestCase.php",
+			"app/BorderFactory/",
+			"app/BorderFactory/EditControls",
+			"app/cakehollywood/"
+		],
+		"files": ["app/cakehollywood/helpers.php"],
+		
+		"psr-4": {
+			"cakehollywood\\": "app/cakehollywood"
+		}
 	},
 	"scripts": {
 		"post-install-cmd": [

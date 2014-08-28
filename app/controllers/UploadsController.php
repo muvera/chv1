@@ -30,7 +30,20 @@ class UploadsController extends \BaseController {
 
 	public function process(){
 
+	if(Session::get('cat_id')==3){
+		if(Session::get('border_make')==12){
+				TwelveCircles::make();
+				}
+		if(Session::get('border_make')==8){
+				EightCircles::make();
+				}
+		if(Session::get('border_make')==24){
+				TwentyCircles::make();
+				}
 
+		return Redirect::back();
+
+	}else{
 					#get the image
 					$image = Input::file('image');
 					$upload = $image->getClientOriginalName();
@@ -74,6 +87,7 @@ class UploadsController extends \BaseController {
 					Session::put('cat_id', Input::get('cat_id'));
 
 					return Redirect::back();
+					}
 
 
 		}

@@ -18,6 +18,8 @@ class CreateCategoriesTable extends Migration {
 			$table->string('border_id');
 			$table->string('name');
 			$table->string('description');
+			$table->string('file');
+			$table->string('active');
 			$table->timestamps();
 		});
 	}

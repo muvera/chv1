@@ -10,17 +10,12 @@
 <div class="row">
 
 
-
-
-
-
-
 @foreach($borders as $border)
 {{Form::open(['method'=>'DELETE', 'route'=>['borders.destroy', $border->id]])}}
 {{Form::hidden('id', $border->id)}}
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <a href="{{route('borders.show', $border->id)}}"><img src="/borders/{{$border->file}}" ></a>
+      <a href="{{route('borders.show', $border->id)}}"><img src="/borders/thumb/{{$border->file}}" ></a>
       <div class="caption">
         <h3><a href="{{route('borders.show', $border->id)}}">{{$border->name}}</a></h3>
         <p><a href="{{route('borders.edit', $border->id)}}" class="btn btn-default" role="button">Edit</a> <button class="btn btn-default" type="submit">Delte</button> </p>

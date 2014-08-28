@@ -136,7 +136,13 @@ class BordersController extends \BaseController {
 	public function show($id){
 
 				$border = Border::findOrFail($id);
-		
+				$category = $border->cat_id;
+				$make = $border->make;
+				
+				Session::put('cat_id', $category);
+				Session::put('border_id', $id);
+				Session::put('border_make', $make);
+
 				return View::make('borders.show')
 					->with('border', $border);
 

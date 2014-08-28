@@ -54,6 +54,8 @@ class CategoriesController extends \BaseController {
 	 */
 	public function show($id)
 	{
+
+
 		$category = Category::findOrFail($id);
 		# Get Borders
 		$borders = Border::where('cat_id','=', $id)->get();

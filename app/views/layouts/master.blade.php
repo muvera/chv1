@@ -5,78 +5,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
     <title>
 @yield('title')
     </title>
-
     <!-- Bootstrap core CSS -->
    <!-- Latest compiled and minified CSS -->
-
 <link rel="stylesheet" href="/assets/bootstrap-3.2.0-dist/css/bootstrap.min.css">
-
-
-
-
 @yield('meta')
 
   </head>
 
-  <body>
+<body>
+@include('layouts.nav')
 
-    <div class="navbar navbar-inverse " role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/"><img src="{{asset('assets/logo.png')}}" alt="CakeHollywood"></a>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="/categories">Categories</a></li>
-          </ul>
+   
 
-  <ul class="nav navbar-nav pull-right">
-            @if(Auth::guest())
-            <li><a href="/register">Register</a></li>
-            <li><a href="/login">Login</a></li>
-            @else
-              <li>{{ link_to('/'.Auth::user()->username, 'Profile')}}</li>
-              <li><a href="/logout">Logout</a></li>
-            @endif
-            </ul>
-          <!-- CART STARTS -->
-
-@if(Session::get('cart'))
-<?php
-
-  $items = Session::get('cart');
-  $count = count($items); 
-
-?>
-
-          <ul class="nav navbar-nav pull-right">
-            <li><a href="/cart"><span class="glyphicon glyphicon-shopping-cart"> {{$count}} </span> Designs </a></li>
-          
-          </ul>   
-@endif
-
-
-          <!-- CART Ends -->
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-
-    <div class="container">
-
+<div class="container">
 @yield('content')
-
-    </div>
+</div>
 
 
 @yield('footer')
@@ -84,6 +30,11 @@
   <br>
   Los Angles USA (818) 310-3652 | <a href="mailto:sales@gogocakes.com?Subject=Hello%20again" target="_top">
 sales@gogocakes.com </a> </center>
+
+
+<!-- JavaScript And BootStrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
   </body>
 </html>

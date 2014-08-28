@@ -20,6 +20,7 @@ class CreateBordersTable extends Migration {
 			$table->string('name');
 			$table->string('description');
 			$table->string('file');
+			$table->string('make');
 			$table->timestamps();
 		});
 	}

@@ -35,6 +35,8 @@ class SizesTableSeeder extends Seeder {
 			['dshape'=>'2','cat' => '2' ,'name'=> '6 of 3', 'description'=> 'Round 5 Inch cake image', 'width'=>'300', 'height'=>'300', 'base_price'=> '4.99', 'mask'=>'9.png'],
 			// 10
 			['dshape'=>'2','cat' => '2' ,'name'=> '12 of 2', 'description'=> 'Round 5 Inch cake image', 'width'=>'200', 'height'=>'200', 'base_price'=> '4.99', 'mask'=>'10.png'],
+			['dshape'=>'2','cat' => '2' ,'name'=> '8 of 2.5', 'description'=> '8 Circles edible image', 'width'=>'250', 'height'=>'250', 'base_price'=> '4.99', 'mask'=>'10.png'],
+			['dshape'=>'2','cat' => '2' ,'name'=> '8 of 2.5', 'description'=> '8 Circles edible image', 'width'=>'250', 'height'=>'250', 'base_price'=> '4.99', 'mask'=>'10.png'],
 			// 11
 			['dshape'=>'2','cat' => '2' ,'name'=> '30 of 1.5', 'description'=> 'Round 5 Inch cake image', 'width'=>'150', 'height'=>'150', 'base_price'=> '4.99', 'mask'=>'11.png'],
 			// STATIC SIZES START

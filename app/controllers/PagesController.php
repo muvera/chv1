@@ -11,6 +11,7 @@ class PagesController extends \BaseController {
 	public function home()
 	{
 
+		
 
 		$products = Product::get();
 		return View::make('pages.index')

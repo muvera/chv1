@@ -20,7 +20,10 @@ class ProductsTableSeeder extends Seeder {
 ['size_id'=>'3 ', 'shape_id'=>'1', 'name'=>'6x4.5 inch edible image', 'description'=>'Edible Cake Image for cakes with borders. Decoration covers the area after the cake as been decorated for most standard quarter sheet cakes, apply the 6x4/5 size  if the cake has been decorated.', 'video'=>'' ,'price'=>'9.99','special'=>'7.75','rewards'=>'100', 'file'=>'6x4_5.jpg'],
 ['size_id'=>'4', 'shape_id'=>'1', 'name'=>'7 inch edible image', 'description'=>'This is a dummy description', 'video'=>'' ,'price'=>'9.99','special'=>'7.75','rewards'=>'100', 'file'=>'7inch.jpg'],
 ['size_id'=>'5', 'shape_id'=>'1', 'name'=>'6 inch edible image', 'description'=>'This is a dummy description', 'video'=>'' ,'price'=>'9.99','special'=>'7.75','rewards'=>'100', 'file'=>'6inch.jpg'],
-['size_id'=>'6', 'shape_id'=>'1', 'name'=>'5 inch edible image', 'description'=>'This is a dummy description', 'video'=>'' ,'price'=>'9.99','special'=>'7.75','rewards'=>'100', 'file'=>'5inch.jpg']
+['size_id'=>'6', 'shape_id'=>'1', 'name'=>'5 inch edible image', 'description'=>'This is a dummy description', 'video'=>'' ,'price'=>'9.99','special'=>'7.75','rewards'=>'100', 'file'=>'5inch.jpg'],
+['size_id'=>'6', 'shape_id'=>'1', 'name'=>'2 inch cupcake image', 'description'=>'This is a dummy description', 'video'=>'' ,'price'=>'9.99','special'=>'7.75','rewards'=>'100', 'file'=>'2inch.jpg'],
+['size_id'=>'6', 'shape_id'=>'1', 'name'=>'2.5 inch cookie image', 'description'=>'This is a dummy description', 'video'=>'' ,'price'=>'9.99','special'=>'7.75','rewards'=>'100', 'file'=>'2_5inch.jpg'],
+['size_id'=>'6', 'shape_id'=>'1', 'name'=>'1.5 inch oreo cookie', 'description'=>'This is a dummy description', 'video'=>'' ,'price'=>'9.99','special'=>'7.75','rewards'=>'100', 'file'=>'1_5.jpg'],
 
 
 

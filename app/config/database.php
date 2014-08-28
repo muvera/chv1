@@ -55,7 +55,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'forge',
+			'database'  => 'cake-hollywood',
 			//'database'  => 'cakehollywood',
 			'username'  => 'forge',
 			//'username'  => 'root',

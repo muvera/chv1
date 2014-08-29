@@ -4,7 +4,7 @@ class BuyController extends \BaseController {
 
 
     public function index(){
-        dd('ok');
+        dd(Address::get());
 
             // Get The Session
             $cart = Session::get('cart');

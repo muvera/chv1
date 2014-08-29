@@ -106,7 +106,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	public function address()
 
 				{
-						return $this->hasOne('address');
+						return $this->hasOne('Address');
 				}	
 
 	public function isCurrent()

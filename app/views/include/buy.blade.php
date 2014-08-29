@@ -8,10 +8,7 @@
 <?php
 $username = Auth::user()->username;
 // pull the model
-
 $user = User::with('profile')->whereUsername($username)->firstOrfail();
-
-dd($user);
 ?>
 @endif
 

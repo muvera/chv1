@@ -10,7 +10,8 @@ class PagesController extends \BaseController {
 	 */
 	public function home()
 	{
-
+		$address = Address::get()->get();
+		dd($address);
 		
 
 		$products = Product::get();

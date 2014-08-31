@@ -42,6 +42,10 @@ Route::get('logout', 'SessionsController@destroy');
 # Registration
 Route::get('/register', 'RegistrationController@create');
 Route::post('/register', ['as'=>'registration.store', 'uses'=>'RegistrationController@store']);
+
+# Orders
+Route::resource('orders', 'OrdersController');
+
 # Authentication
 Route::get('login', 'SessionsController@create');
 Route::get('logout', 'SessionsController@destroy');
@@ -63,8 +67,7 @@ Route::get('addresses/{user}/edit',['as'=>'addresses.edit', 'uses'=>'AddressesCo
 Route::resource('products', 'ProductsController');
 Route::get('/product/{id}', array('as'=>'product', 'uses'=>'ProductsController@show'));
 
-# Orders
-Route::resource('orders', 'OrdersController');
+
 
 
 

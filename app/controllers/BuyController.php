@@ -78,23 +78,9 @@ class BuyController extends \BaseController {
                 $cents = bcmul($dollars, 100);
                 $total = $cents;
 
-                //dd($total);
 
                     }
 
-            // $items = Session::get('cart');
-            // foreach($items as $key => $value)
-            // {
-
-            //     $product = Product::where('id', $value['product'])->first();
-            //     $total = $product->price * count($items);
-            //     $input = $total;
-            //     $dollars = str_replace('$', '', $input);
-            //     $cents = bcmul($dollars, 100);
-            //     $value = $cents;
-
-            // }
-            // Cart ends
 
             # Get Shipping 
             // from database please
@@ -106,8 +92,7 @@ class BuyController extends \BaseController {
                 $output = $cents;
 
             // Shipping ends
-
-            
+ 
         $customerId = $billing->charge([
         'id'=> Auth::user()->id,
         'total'=>$total,
@@ -119,7 +104,6 @@ class BuyController extends \BaseController {
            $user = User::findOrFail($id);
            $user->billing_id = $customerId;
            $user->save(); 
-
 
             }
 

@@ -25,7 +25,7 @@
 </div>
 
 
-@yield('footer')
+
 <center> Cake Hollywood &copy; 2014 | 5007 Santa Monica Blvd Hollywood Ca, 90038 
   <br>
   Los Angles USA (818) 310-3652 | <a href="mailto:sales@gogocakes.com?Subject=Hello%20again" target="_top">
@@ -35,6 +35,6 @@ sales@gogocakes.com </a> </center>
 <!-- JavaScript And BootStrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
+@yield('footer')
   </body>
 </html>

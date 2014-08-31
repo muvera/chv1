@@ -32,10 +32,9 @@ class StripeBilling implements BillingInterface
 					'description'=> $data['email']
 
 					]);
-
+			
 		 Stripe_Charge::create([
 			'customer'=> $customer->id,
-			//amount is in cents
 			'amount' => $data['total'] + $data['shipping'], //$10
 			'currency'=> 'usd'
 			]);

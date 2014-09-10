@@ -19,6 +19,7 @@ class CreateShippingsTable extends Migration {
 			$table->string('description');
 			$table->string('user_cost');
 			$table->string('admin_cost');
+			$table->string('file');
 			$table->timestamps();
 		});
 	}

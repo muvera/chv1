@@ -11,12 +11,41 @@ class PagesController extends \BaseController {
 	public function home()
 	{
 		
-
 		$products = Product::get();
 		return View::make('pages.index')
-				->with('products', $products);
+				->with('products', $products)
+				->with('title', 'Edible Image Decorations for Cakes')
+				->with('meta_description', 'This is the description of the page');
+
 	}
 
+
+	public function about()
+	{
+		
+
+		$products = Product::get();
+		return View::make('pages.about_us');
+				
+	}
+
+	public function contact()
+	{
+		
+
+		$products = Product::get();
+		return View::make('pages.contact');
+				
+	}
+
+	public function policy()
+	{
+		
+
+		$products = Product::get();
+		return View::make('pages.policy');
+				
+	}
 
 
 

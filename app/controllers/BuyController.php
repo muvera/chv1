@@ -137,17 +137,7 @@ class BuyController extends \BaseController {
                 //dd($total);
 
                     }
-            // $items = Session::get('cart');
-            // foreach($items as $key => $value)
-            // {
-            //     $product = Product::where('id', $value['product'])->first();
-            //     $total = $product->price * count($items);
-            //     $value=$total; 
-            //     $bad_symbols = array(",", "."); 
-            //     $value = str_replace($bad_symbols, "", $value);
 
-            // }
-            // Cart ends
 
             # Get Shipping 
             // from database please
@@ -178,11 +168,14 @@ class BuyController extends \BaseController {
     
     $order->amount = $cost;
     $order->shipping = $shipping->user_cost;
+    $order->method = $method;
     $order->items = serialize($cart);
-    $order->status = 'Processing';
     $order->save();
     $id = $order->id;
     // New Order Ends
+
+    # Add Processing Status
+    $order = Order::findOrfail($id)->assignStatus(1);
 
     # Clear Sessions
      Session::forget('cart');
@@ -195,6 +188,15 @@ class BuyController extends \BaseController {
      Session::forget('shape');
     // Clear Ends
 
+
+    # Send Email via Mandrill Notice
+
+            Mail::send('emails.order', [], function($message)
+            {
+            $email = Auth::user()->email;
+            $message->to($email)->subject('Cake Hollywood Order');
+    
+            });
 
     return Redirect::route('orders.show', $id);
  }

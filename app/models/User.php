@@ -121,4 +121,26 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 		return $this->belongsToMany('Role')->withTimeStamps();
 	}
 
+#Check for the Role
+	public function hasRole($name)
+	{
+		foreach($this->roles as $role)
+		{
+			if($role->name == $name) return true;
+		}
+
+		return false;
+	}
+
+#Assing a role
+
+	public function assignRole($role){
+		return $this->roles()->attach($role);
+	}
+#Remove
+	public function removeRole($role){
+		return $this->roles()->detach($role);
+	}
+
+
 }

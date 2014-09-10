@@ -13,9 +13,9 @@ class ShippingsTableSeeder extends Seeder {
 		$items = array(
 			// UPLOADS
 			// 1
-['name'=>'Regular', 'description'=>'3-5 days', 'user_cost'=>'6.50', 'admin_cost'=>'3.00'],
-['name'=>'Priority', 'description'=>'2-3 days', 'user_cost'=>'9.00', 'admin_cost'=>'5.00'],
-['name'=>'Overnight', 'description'=>'Next Day', 'user_cost'=>'24.99', 'admin_cost'=>'18.00'],
+['name'=>'Regular', 'description'=>'3-5 days', 'user_cost'=>'6.50', 'admin_cost'=>'3.00', 'file'=>'regular.png'],
+['name'=>'Priority', 'description'=>'2-3 days', 'user_cost'=>'9.00', 'admin_cost'=>'5.00', 'file'=>'priority.png'],
+['name'=>'Overnight', 'description'=>'Next Day', 'user_cost'=>'24.99', 'admin_cost'=>'18.00', 'file'=>'express.png'],
 
 		);	
 

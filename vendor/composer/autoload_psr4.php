@@ -8,4 +8,6 @@ $baseDir = dirname($vendorDir);
 return array(
     'cakehollywood\\' => array($baseDir . '/app/cakehollywood'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
+    'GuzzleHttp\\Stream\\' => array($vendorDir . '/guzzlehttp/streams/src'),
+    'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),
 );

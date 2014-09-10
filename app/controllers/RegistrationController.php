@@ -57,9 +57,22 @@ class RegistrationController extends \BaseController {
 		
 		$user = User::create($input);
 
+		$user->assignRole(1);
+
 		Auth::login($user);
 
-		return Redirect::to('/buy');
+
+			
+			# USE MANDRILL to send registration notice
+			// Mail::send('emails.welcome', [], function($message)
+	
+			// {
+			// $email = Auth::user()->email;
+			// $message->to($email)->subject('Welcome to Cake Hollywood');
+	
+			// });
+
+		return Redirect::back();
 	}
 
 	/**

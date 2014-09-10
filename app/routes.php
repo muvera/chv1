@@ -1,21 +1,68 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
-*/
-# Buy
-Route::get('buy', ['as'=>'buy', 'uses'=>'BuyController@index']);
-Route::post('buy', 'BuyController@buy');
+// Route::get('/', function(){
+//  $user = User::first();
+// $user->assignRole(4);
+//  return 'ok';
+// });
+
+
+// Route::get('/', function(){
+
+	//return View::make('layouts.emailtest');
+
+	// $user = Auth::user()->email;
+	// dd($user);
+
+// 	Mail::send('emails.test', [], function($message)
+	
+// 	{
+// 	$message->to('muvera@gmail.com')->subject('Laracasts Email');
+	// });
+
+
+// $order = Order::findOrFail(2)->status()->attach(1);
+
+// // $order = Order::first();
+
+
+// // return $order->remove
+
+
+
+//return $order->status()->first()->name;
+
+// if($user->hasRole('')) return 'you are the owner';
+// return 'you are not';
+
+// });
+
+// Route::get('reporting', function(){
+
+// 	return 'secret place';
+
+// })->before('role:root');
 
 #First Page Index, Home
 Route::get('/', ['as'=>'home', 'uses'=>'PagesController@home']);
+Route::get('about', ['as'=>'about', 'uses'=>'PagesController@about']);
+Route::get('contact', ['as'=>'contact', 'uses'=>'PagesController@contact']);
+Route::get('policy', ['as'=>'policy', 'uses'=>'PagesController@policy']);
+
+# Administration
+Route::get('admin', ['before' => 'role:owner', 'uses' => 'AdminController@index']);
+Route::get('adminorderindex', ['before' => 'role:owner', 'as'=>'adminorderindex', 'uses' => 'AdminController@orderindex']);
+Route::get('adminordershow/{id}', ['before' => 'role:owner', 'as'=>'adminordershow', 'uses' => 'AdminController@ordershow']);
+Route::post('status', ['before' => 'role:owner', 'as'=>'status', 'uses' => 'AdminController@status']);
+Route::get('printorder/{id}', ['before' => 'role:owner', 'as'=>'printorder', 'uses' => 'AdminController@printorder']);
+//Route::resource('admin', 'AdminController');
+
+Route::post('/', ['as'=>'changeRole', 'uses'=>'AdminController@changeRole']);
+
+
+# Buy
+Route::get('buy', ['as'=>'buy', 'uses'=>'BuyController@index']);
+Route::post('buy', 'BuyController@buy');
 
 # System Routes
 Route::resource('categories','CategoriesController');
@@ -66,6 +113,8 @@ Route::get('addresses/{user}/edit',['as'=>'addresses.edit', 'uses'=>'AddressesCo
 # Products
 Route::resource('products', 'ProductsController');
 Route::get('/product/{id}', array('as'=>'product', 'uses'=>'ProductsController@show'));
+
+
 
 
 

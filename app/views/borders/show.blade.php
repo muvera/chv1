@@ -1,17 +1,24 @@
 @extends('layouts.master')
+@section('title', strip_tags($border->name))
+@section('meta_description', strip_tags($border->description))
 @section('content')
-
-
+@include('pages.categories')
 <div class="row">
-	<div class="col-md-9">
+	<div class="col-md-7">
+
 @if(Session::get('border_file')==$border->file)
 <!-- get the new file -->
-<img src="/uploads/{{Session::get('process')}}" class="img-responsive thumbnail"></div>
+<img src="/uploads/{{Session::get('process')}}" class="img-responsive thumbnail">
 @else
 <!-- get system file -->
-<img src="/borders/{{$border->file}}" class="img-responsive thumbnail"></div>
+<img src="/borders/{{$border->file}}" class="img-responsive thumbnail">
 @endif
-<div class="col-md-3">
+
+</div>
+
+
+<div class="col-md-5">
+
 <h1>{{$border->name}}</h1>
 
 @if(!Session::get('process'))
@@ -56,8 +63,6 @@
 
 @endif
 
-
-</div>
 </div>
 
 

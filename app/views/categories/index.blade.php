@@ -8,11 +8,6 @@
 @foreach($categories as $category)
 
 
-	
-	
-
-
-
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
       <a href="{{route('categories.show', $category->id)}}"><img src="{{asset('assets/images/'.$category->file)}}" alt="{{$category->name}}"></a>

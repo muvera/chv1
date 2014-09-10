@@ -37,8 +37,8 @@ class CreateOrdersTable extends Migration {
 
 			$table->string('amount');
 			$table->string('shipping');
+			$table->string('method');
 			$table->text('items');
-			$table->string('status');
 			$table->timestamps();
 
 		});

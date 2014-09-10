@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section('title', 'Cake Hollywood Cart')
 @section('content')
 @if(Session::get('cart'))
 

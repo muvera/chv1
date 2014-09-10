@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section('title', 'Payment Methods')
 @section('meta')
 <meta name="publishable-key", content="{{ Config::get('development/stripe.publishable_key') }}"></meta>
 @stop

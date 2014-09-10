@@ -25,7 +25,7 @@
           <td>{{$order->ship_to}}</td>
           <td>{{$order->amount}}</td>
           <td>Priority</td>
-          <td>{{$order->status}}</td>
+          <td>{{$order->status->first()->name}}</td>
           <td><a href="{{route('orders.show', $order->id)}}" type="button" class="btn btn-default" > View</a></td>
         </tr>
 @endforeach

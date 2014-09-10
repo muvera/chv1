@@ -1,3 +1,4 @@
+
 @extends('layouts.master')
 @section('content')
 <div class="panel panel-default">
@@ -27,7 +28,7 @@
 Date: {{$order->created_at}}<br>
 Order #:         {{$order->id}}</br>
 Cutomer #: {{$order->user_id}}<br>
-Status: {{$order->status}}</br>	
+Status: {{$order->status->first()->name}}</br>	
 </div>
 
 </div>
@@ -87,6 +88,7 @@ Status: {{$order->status}}</br>
             <th>Image</th>
             <th>Name</th>
             <th>Description</th>
+            <th>Qty</th>
             <th>Price</th>
           </tr>
         </thead>
@@ -111,6 +113,7 @@ $shape = Size::findOrFail($value['size_id']);
             <td><img src="/uploads/{{$value['process']}}" class="thumbnail" width="100"></td>
             <td>{{$shape->name}}</td>
             <td>{{$shape->description}}</td>
+            <td>{{$value['qty']}}</td>
             <td>{{$shape->base_price}}</td>
           </tr>
 

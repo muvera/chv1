@@ -3,7 +3,7 @@
 @section('meta_description', strip_tags($meta_description))
 
 @section('content')
-@include('pages.categories')
+
 <div class="row">
 	<div class="col-md-4">
 		<h1>Create your own Cake Image</h1>
@@ -20,6 +20,9 @@
 	</div>
 
 </div>
+
+@include('pages.categories')
+
 
 <p>Edible printing for cakes is now more easy than ever, simply create an account and have your images delivered to your home or business. We use the best US made, edible paper, food coloring and technology to customize your celebration or creative works. 
 Give us a try and if you are not satisfied your image is free.</p>

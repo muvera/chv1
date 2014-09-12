@@ -2,13 +2,13 @@
 @section('title', strip_tags($border->name))
 @section('meta_description', strip_tags($border->description))
 @section('content')
-@include('pages.categories')
+
 <div class="row">
 	<div class="col-md-7">
 
 @if(Session::get('border_file')==$border->file)
 <!-- get the new file -->
-<img src="/uploads/{{Session::get('process')}}" class="img-responsive thumbnail">
+<img src="/uploads/{{Session::get('user_dir')}}/{{Session::get('process')}}" class="img-responsive thumbnail">
 @else
 <!-- get system file -->
 <img src="/borders/{{$border->file}}" class="img-responsive thumbnail">
@@ -18,7 +18,6 @@
 
 
 <div class="col-md-5">
-
 <h1>{{$border->name}}</h1>
 
 @if(!Session::get('process'))
@@ -56,7 +55,7 @@
 
 
 			@if(Session::get('border_file')!==$border->file)
-			<img src="/uploads/{{Session::get('thumbnail')}}" class="img-responsive thumbnail">
+			<img src="/uploads/{{Session::get('user_dir')}}/{{Session::get('thumbnail')}}" class="img-responsive thumbnail">
 			<a href="{{route('loadimage', $border->file)}}" class="btn btn-primary ">Load Image</a>
 			<a href="{{route('deleteimage', $border->file)}}" class="btn btn-default ">Delete</a>
 			@endif
@@ -64,7 +63,8 @@
 @endif
 
 </div>
-
+</div>
+@include('pages.categories')
 
 
 @stop

@@ -54,12 +54,12 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'		=> 'localhost',
-			'database'  => 'cakehollywood',
+			// 'host'		=> 'localhost',
+			// 'database'  => 'cakehollywood',
 			'username'  => 'forge',
 			'password'  => 'ZeKOy0NOqHlWYkhmnxXC',
-			// 'username'  => 'root',		
-			// 'password'  => 'root',
+			'username'  => 'root',		
+			'password'  => 'root',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

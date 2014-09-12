@@ -69,7 +69,9 @@ Route::resource('categories','CategoriesController');
 Route::resource('borders','BordersController');
 Route::resource('uploads','UploadsController');
 Route::post('process',['as'=>'process', 'uses'=>'UploadsController@process']);
-Route::get('control',['as'=>'control', 'uses'=>'ControlController@control']);
+# Control
+Route::get('control/{id}',['as'=>'control', 'uses'=>'ControlController@control']);
+
 Route::get('loadimage/{border}',['as'=>'loadimage', 'uses'=>'UploadsController@loadimage']);
 Route::get('deleteimage/{border}',['as'=>'deleteimage', 'uses'=>'UploadsController@deleteimage']);
 

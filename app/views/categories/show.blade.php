@@ -2,7 +2,7 @@
 @section('title', strip_tags($category->name))
 @section ('meta_description', strip_tags($category->description))
 @section('content')
-@include('pages.categories')
+
 <h3>{{$category->name}} <small>{{$category->description}}</small></h3>
 
 <div class="row">
@@ -23,6 +23,8 @@ $user = Auth::user();
 @if(Auth::user())
     @if($user->roles->first()->name == 'owner')
         <a href="{{route('borders.edit', $border->id)}}" class="btn btn-default" role="button">Edit</a> <button class="btn btn-default" type="submit">Delte</button>
+
+        <a href="{{route('borders.create')}}" class="">New Border</a>
     @endif
 @endif
 
@@ -36,7 +38,9 @@ $user = Auth::user();
 
 </div>
 
-<a href="{{route('borders.create')}}" class="">New Border</a>
+
+
+@include('pages.categories')
 @stop
 
 

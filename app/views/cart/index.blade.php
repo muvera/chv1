@@ -20,7 +20,7 @@
 			@foreach($cart as $key => $value)
       	<tr>
 		<td>{{$value['border_id']}}</td>
-      	<td><img src="/uploads/{{$value['process']}}" class="img-responsive thumbnail" width="100px"></td>
+      	<td><img src="/uploads/{{Session::get('user_dir')}}/{{$value['process']}}" class="img-responsive thumbnail" width="100px"></td>
 		<td>{{$value['process']}}</td>
 				<?php
 				// get the price

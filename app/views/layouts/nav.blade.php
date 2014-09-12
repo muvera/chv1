@@ -22,50 +22,20 @@ $categories = Category::where('active', '=', 1)->get();
      <ul class="nav navbar-nav">
 
         <li class="dropdown">
-          <a href="categories/" class="dropdown-toggle" data-toggle="dropdown">Photo Cake<span class="caret"></span></a>
+          <a href="categories/" class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
 <li><a href="/categories/1">Rectangle Cake</a></li>
 <li><a href="/categories/2">Round Cake</a></li>
 <li><a href="/categories/3">Cupcake & Cookie Cicles</a></li>
+<li><a href="/categories/4">Birthday</a></li>
+<li><a href="/categories/5">Action</a></li>
 
           </ul>
         </li>
 
 
-<li class="dropdown">
-          <a href="categories/" class="dropdown-toggle" data-toggle="dropdown">Rectangles<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-@foreach($categories as $category)
-<li><a href="/categories/{{$category->id}}">{{$category->name}}</a></li>
-@endforeach
-
-          </ul>
-        </li>
 
 
-        <li class="dropdown">
-          <a href="categories/" class="dropdown-toggle" data-toggle="dropdown">Round<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-
-<li><a href="/categories/">Birthday</a></li>
-
-
-          </ul>
-        </li>
-
-
-<li class="dropdown">
-          <a href="categories/" class="dropdown-toggle" data-toggle="dropdown">3D<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-<li><a href="categories/">Tequila Botles</a></li>
-<li><a href="categories/">Whisky Bottles</a></li>
-<li><a href="categories/">Wine Bottles</a></li>
-<li><a href="categories/">Vodka Bottles</a></li>
-<li><a href="categories/">Beer Bottles</a></li>
-<li><a href="categories/">Bags & Purses</a></li>
-
-          </ul>
-        </li>
 
 
       </ul>

@@ -1,8 +1,7 @@
 
 
 @if($user->address==null)
-<h1>Oops! Where do we ship your package?</h1>
-<img src="{{asset('assets/images/address.jpg')}}" alt="" class="">
+
 @else
 
 <h1>Payment <small>${{$total + $shipping->user_cost}}</small></h1>
@@ -35,8 +34,8 @@
 
 <div class="form-row">
 		<label>
-			<span>Email Address</span>
-			<input class="form-control" type="email" id="email" name="email" value="{{$user->email}}">
+			
+			<input class="form-control" type="hidden" id="email" name="email" value="{{$user->email}}">
 		</label>
 </div>
 

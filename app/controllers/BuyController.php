@@ -5,10 +5,12 @@ class BuyController extends \BaseController {
 
     public function index(){
 
+
+
             // Get The Session
             $cart = Session::get('cart');
             $sum = 0;
-            
+            if(!$cart) return Redirect::route('home');
             // Get the Shipping
             $x = Session::get('shipping');
             $shipping = Shipping::where('id', '=', $x)->first();
@@ -158,6 +160,7 @@ class BuyController extends \BaseController {
     $order->b_state = $profile->address->state;
     $order->b_zip = $profile->address->zip;
     $order->b_country = $profile->address->country;
+    $order->b_phone = $profile->address->phone;
 
     $order->s_address = $profile->address->address;
     $order->s_address2 = $profile->address->apt;
@@ -165,6 +168,7 @@ class BuyController extends \BaseController {
     $order->s_state = $profile->address->state;
     $order->s_zip = $profile->address->zip;
     $order->s_country = $profile->address->country;
+    $order->s_phone = $profile->address->phone;
     
     $order->amount = $cost;
     $order->shipping = $shipping->user_cost;

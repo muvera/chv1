@@ -4,41 +4,36 @@
   <div class="panel-body">
 
 <div class="row">
+ <a href="/adminorderindex" class="btn btn-default btn-sm hidden-print" type="button">All Orders</a>
+<a href="/orders" class="btn btn-default btn-sm hidden-print" type="button" value="Print this page" onClick="window.print()">Print Receipt</a>
 	
-<div class="col-md-6">
-<address>
-<h1>Cake Hollywood, Inc.</h1>
+
+
+<table class="table ">
+ <tr>
+   <td>
+<address >
+<h3>Cake Hollywood, Inc.</h3>
 
   5507 Santa Monica Blvb, Suite 205<br>
   Hollywood, CA 90038<br>
   <abbr title="Phone">P:</abbr> (818) 310-3652
 </address>
-</div>
-
-
-
-<div class="col-md-6">
-
-<a href="/orders" class="btn btn-default btn-sm" type="button">All Orders</a>
-<a href="/orders" class="btn btn-default btn-sm" type="button">Track</a>
-<a href="/orders" class="btn btn-default btn-sm" type="button">Print Receipt</a>
+   </td>
+   <td>
 
 <h3>Customer Receipt</h3>
 Date: {{$order->created_at}}<br>
 Order #:         {{$order->id}}</br>
 Cutomer #: {{$order->user_id}}<br>
-Status: {{$order->status->first()->name}}</br>	
-</div>
+Status: {{$order->status->first()->name}}</br>      
 
-</div>
-
-
-
-
-<div class="row">
-<div class="col-md-6">
-	<strong>Bill To:</strong></br>
-	
+   </td>
+ </tr>
+ <tr>
+     <td>
+        <strong>Bill To:</strong></br>
+  
   {{$order->bill_to}}
 
   <br>
@@ -50,11 +45,10 @@ Status: {{$order->status->first()->name}}</br>
   {{$order->b_zip}}
   <br>
   {{$order->b_country}}
-
-</div>
-<div class="col-md-6">
-	<strong>Ship To:</strong></br>
-	
+     </td>
+   <td>
+  <strong>Ship To:</strong></br>
+  
   {{$order->ship_to}}
 
   <br>
@@ -65,19 +59,25 @@ Status: {{$order->status->first()->name}}</br>
   {{$order->s_state}} , 
   {{$order->s_zip}}
   <br>
-  {{$order->b_country}}
+  {{$order->b_country}}     
 
-</div>	
+   </td> 
+ </tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
-
-
-
-
-
-<br>
-<br>
-
-
 
 
 <table class="table">
@@ -104,7 +104,7 @@ Status: {{$order->status->first()->name}}</br>
     ?>
           <tr>
             <td>{{$value['border_id']}}</td>
-            <td><img src="/uploads/{{$value['process']}}" class="thumbnail" width="100" onclick="newWindow = window.open('/uploads/{{$value['process']}}'); newWindow.print();"></td>
+            <td><img src="/uploads/{{$value['user_dir']}}/{{$value['process']}}" class="thumbnail" width="100" onclick="newWindow = window.open('/uploads/{{$value['user_dir']}}/{{$value['process']}}'); newWindow.print();"></td>
             <td>{{$shape->name}}</td>
             <td>{{$shape->description}}</td>
             <td>{{$value['qty']}}</td>

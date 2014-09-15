@@ -3,19 +3,22 @@ class EightCircles {
 
 	public static function make(){
 
+					# user dir
+					$user_dir = Session::get('user_dir');
+
 					#get the image
 					$image = Input::file('image');
 					$upload = $image->getClientOriginalName();
-					$image->move(public_path('/uploads/'), $image->getClientOriginalName());
+					$image->move(public_path('/uploads/'. $user_dir.'/'), $image->getClientOriginalName());
 					$new_name = rand(700,0).'.jpg';
 
 					#Resize the uploaded file and rename it
-					Image::make(public_path('uploads/'. $upload))
+					Image::make(public_path('uploads/'. $user_dir.'/'. $upload))
 						->resize(350, null, function ($constraint) {$constraint->aspectRatio();})
 						->crop(250, 250)
-						->save(public_path('uploads/' . $new_name))
+						->save(public_path('uploads/' . $user_dir.'/'. $new_name))
 						->resize(100, null, function ($constraint) {$constraint->aspectRatio();})
-						->save(public_path('uploads/thumb_' . $new_name));
+						->save(public_path('uploads/' . $user_dir.'/thumb_'. $new_name));
 
 					
 					#get border file
@@ -41,23 +44,23 @@ class EightCircles {
 					#layer the image
 					Image::canvas(1000,750, '#000000')
 							// Col1
-							->insert(public_path('uploads/'. $new_name ),'null', $col1, $row1)
-							->insert(public_path('uploads/'. $new_name ),'null', $col1, $row3)
+							->insert(public_path('uploads/'. $user_dir.'/'. $new_name ),'null', $col1, $row1)
+							->insert(public_path('uploads/'. $user_dir.'/'. $new_name ),'null', $col1, $row3)
 							// Col2
-							->insert(public_path('uploads/'. $new_name ),'null', $col2, $row2)
+							->insert(public_path('uploads/'. $user_dir.'/'. $new_name ),'null', $col2, $row2)
 							// Col3
-							->insert(public_path('uploads/'. $new_name ),'null', $col3, $row1)
-							->insert(public_path('uploads/'. $new_name ),'null', $col3, $row3)
+							->insert(public_path('uploads/'. $user_dir.'/'. $new_name ),'null', $col3, $row1)
+							->insert(public_path('uploads/'. $user_dir.'/'. $new_name ),'null', $col3, $row3)
 							// Col4
-							->insert(public_path('uploads/'. $new_name ),'null', $col4, $row2)
+							->insert(public_path('uploads/'. $user_dir.'/'. $new_name ),'null', $col4, $row2)
 							// Col3
-							->insert(public_path('uploads/'. $new_name ),'null', $col5, $row1)
-							->insert(public_path('uploads/'. $new_name ),'null', $col5, $row3)
+							->insert(public_path('uploads/'. $user_dir.'/'. $new_name ),'null', $col5, $row1)
+							->insert(public_path('uploads/'. $user_dir.'/'. $new_name ),'null', $col5, $row3)
 	
 
 
 							->insert(public_path('borders/'. $border_file), 'center')
-							->save(public_path('uploads/'. $new_name));
+							->save(public_path('uploads/'. $user_dir.'/'. $new_name));
 					
 					#add sessions
 					// Add border Id

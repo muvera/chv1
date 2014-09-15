@@ -21,8 +21,7 @@
 <div class="col-md-6">
 
 <a href="/orders" class="btn btn-default btn-sm" type="button">All Orders</a>
-<a href="/orders" class="btn btn-default btn-sm" type="button">Track</a>
-<a href="/orders" class="btn btn-default btn-sm" type="button">Print Receipt</a>
+<a href="/orders" class="btn btn-default btn-sm" type="button" value="Print this page" onClick="window.print()">Print Receipt</a>
 
 <h3>Customer Receipt</h3>
 Date: {{$order->created_at}}<br>
@@ -107,7 +106,7 @@ $shape = Size::findOrFail($value['size_id']);
 
 ?>
 
-
+{{$value['process']}}
           <tr>
             <td>{{$value['border_id']}}</td>
             <td><img src="/uploads/{{Session::get('user_dir')}}/{{$value['process']}}" class="thumbnail" width="100"></td>

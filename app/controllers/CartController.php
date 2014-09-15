@@ -23,6 +23,8 @@ class CartController extends \BaseController {
 					
 					#get sessions
 					// border Id
+					$user_dir = Session::get('user_dir');
+					// border Id
 					$border_id = Session::get('border_id');
 					// border File
 					$border_file = Session::get('border_file');
@@ -76,6 +78,7 @@ class CartController extends \BaseController {
 
 					#push it to the cart
 					$cart = Session::push('cart',[
+					'user_dir'=> $user_dir,
 					'border_id'=> $border_id,
 					'border_file'=> $border_file,
 					'process'=> $process,

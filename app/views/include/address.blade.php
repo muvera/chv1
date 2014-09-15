@@ -18,4 +18,5 @@
   <strong>Contact email</strong><br>
   <a href="mailto:{{$user->email}}">{{$user->email}}</a>
 </address>
+<a href="{{route('addresses.edit', $user->username)}}">Edit Address</a>
 @endif

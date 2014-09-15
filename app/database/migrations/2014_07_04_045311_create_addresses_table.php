@@ -19,6 +19,7 @@ class CreateAddressesTable extends Migration {
 			$table->string('company');
 			$table->string('name');
 			$table->string('last');
+			$table->string('phone');
 			$table->string('address');
 			$table->string('apt');
 			$table->string('city');

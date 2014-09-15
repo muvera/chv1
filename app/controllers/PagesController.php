@@ -15,7 +15,7 @@ class PagesController extends \BaseController {
 		return View::make('pages.index')
 				->with('products', $products)
 				->with('title', 'Edible Image Decorations for Cakes')
-				->with('meta_description', 'This is the description of the page');
+				->with('meta_description', 'Edible cake images,  Edible cupcake images & Edible photos for cakes');
 
 	}
 

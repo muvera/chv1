@@ -36,33 +36,42 @@ $user->profile()->save($profile);
 
 
 <div class="col-md-6">
-  <h1>Orders</h1>
-</div>
-<div class="col-md-6">
- <h1>Shipping Address:</h1>
+   <h1>{{$user->address->name}} {{$user->address->last}}</h1>
+
+   <h4>Shipping Address:</h4>
 
 <address>
   @if($user->address->company==true)
   <strong>{{$user->address->company}}</strong><br>
   @endif
   <strong>{{$user->address->name}} {{$user->address->last}} </strong><br>
-  {{$user->address->address}}<br>
-  {{$user->address->apt}}<br>
-  {{$user->address->city}}, C{{$user->address->state}} {{$user->address->zip}}<br>
-  <abbr title="Phone">P:</abbr> (123) 456-7890
-</address>
-
-<address>
-  <strong>Contact email</strong><br>
-  <a href="mailto:{{$user->email}}">{{$user->email}}</a>
+  {{$user->address->address}} 
+  @if($user->address->apt)
+  # {{$user->address->apt}}
+  @endif
+  <br>
+  
+  {{$user->address->city}}, {{$user->address->state}} {{$user->address->zip}}<br>
+  <abbr title="Phone">P:</abbr> {{$user->address->phone}}
 </address>
 
 
 
 @if ($user->isCurrent())
+<address>
+  <strong>Contact email</strong><br>
+  <a href="mailto:{{$user->email}}">{{$user->email}}</a>
+</address>
 
-<a href="{{route('addresses.edit', $user->username)}}" class="btn btn-primary btn-lg" type="button">Edit Address</a>
+  <h4>Orders</h4>
+  <a href="/orders" class="btn btn-primary btn-lg btn-block" type="button">Show</a>
+
+
+<a href="{{route('addresses.edit', $user->username)}}" class="btn btn-primary btn-lg btn-block" type="button">Edit Address</a>
 @endif
+</div>
+<div class="col-md-6">
+
   </div>
 </div>
 

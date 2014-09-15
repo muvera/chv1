@@ -124,4 +124,5 @@ $shape = Size::findOrFail($value['size_id']);
 </td>
 </tr>
 </table>
-
+<center>Thank you for ordering from Cake Hollywood. Your images will be processed and shipped if you order before 11-12 PM M-F PT(California Time). 
+TRACKING: A secondary email will be sent containing your tracking number or you may check the status of your order at our site by going to: http://cakehollywood.com/</center>

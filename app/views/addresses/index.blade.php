@@ -1,1 +1,0 @@
-/vagrant/cakehollywood/app/views/addresses/index.blade.php

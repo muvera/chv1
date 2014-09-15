@@ -29,7 +29,7 @@
 </div>
 
 
-
+<div class="hidden-print">
 <center> 
   <br>
   <a href="/about">About Us</a> |
@@ -42,7 +42,7 @@ Cake Hollywood &copy; 2014 | 5007 Santa Monica Blvd Hollywood Ca, 90038
 <br>
 <br>
 </center>
-
+</div>
 
 <!-- JavaScript And BootStrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

@@ -55,6 +55,7 @@ class AddressesController extends \BaseController {
 		$address->company = $input['company'];
 		$address->name = $input['name'];
 		$address->last = $input['last'];
+		$address->phone = $input['phone'];
 		$address->address = $input['address'];
 		$address->apt = $input['apt'];
 		$address->city = $input['city'];
@@ -79,7 +80,7 @@ class AddressesController extends \BaseController {
 	 */
 	public function show($username)
 	{
-		dd('ok');
+		dd('username');
 	}
 
 	/**
@@ -89,9 +90,12 @@ class AddressesController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit($id)
+	public function edit($username)
 	{
-		//
+		$user = User::whereUsername($username)->firstOrfail();
+
+		return View::make('addresses.edit')
+				->with('user', $user);
 	}
 
 	/**
@@ -103,7 +107,27 @@ class AddressesController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		//
+		
+		$address = Address::findOrFail($id);
+
+
+		$input = Input::get();
+		$address->company = $input['company'];
+		$address->name = $input['name'];
+		$address->last = $input['last'];
+		$address->phone = $input['phone'];
+		$address->address = $input['address'];
+		$address->apt = $input['apt'];
+		$address->city = $input['city'];
+		$address->zip = $input['zip'];
+		$address->state = $input['state'];
+		$address->country = $input['country'];
+		
+		$address->save();
+
+		return Redirect::back();
+
+
 	}
 
 	/**

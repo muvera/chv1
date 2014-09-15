@@ -108,6 +108,7 @@ Route::post('/{profile}', array(
 # Addresses
 Route::get('addresses/{user}/create', ['as'=>'addresses.create', 'uses'=>'AddressesController@create']);
 Route::post('addresses/{user}/store', ['as'=>'addresses.store', 'uses'=>'AddressesController@store']);
+Route::post('addresses/{user}/update', ['as'=>'addresses.update', 'uses'=>'AddressesController@update']);
 Route::get('addresses/{user}/show', 'AddressesController@show');
 Route::get('addresses/{user}/edit',['as'=>'addresses.edit', 'uses'=>'AddressesController@edit'] );
 

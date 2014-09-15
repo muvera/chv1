@@ -33,12 +33,15 @@ class UploadsController extends \BaseController {
 	if(Session::get('cat_id')==3){
 		# If the category changes make Circles
 		if(Session::get('border_make')==12){
+				SessionManager::makeFolder();
 				TwelveCircles::make();
 				}
 		if(Session::get('border_make')==8){
+				SessionManager::makeFolder();
 				EightCircles::make();
 				}
 		if(Session::get('border_make')==24){
+				SessionManager::makeFolder();
 				TwentyCircles::make();
 				}
 

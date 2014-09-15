@@ -101,7 +101,7 @@ $shape = Size::findOrFail($value['size_id']);
           <tr>
             <td>{{$value['border_id']}}</td>
             
-            <td><img src="/uploads/{{$value['process']}}" class="thumbnail" width="100"></td>
+            <td><img src="http://cakehollywood.com/uploads/{{$value['user_dir']}}/{{$value['process']}}" class="thumbnail" width="100"></td>
             <td>{{$shape->name}}</td>
             <td>{{$shape->description}}</td>
             <td>{{$value['qty']}}</td>

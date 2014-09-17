@@ -61,13 +61,13 @@ class BordersTableSeeder extends Seeder {
 // Halloween
 ['cat_id'=>'6', 'size_id'=>'1','name'=>'The Walking Dead Edible Images', 'description'=>'The Walking Dead Edible Images Edible Cake Image Border <br> <strong>Usage:</strong> Rectangle Cakes <br><strong>Size:</strong> 10x7.5 Standar 1/4 Sheet  <br> <strong>Material:</strong> High Quality Sugar Sheet', 'file'=>'32.png', 'make'=>'1'],
 ['cat_id'=>'6', 'size_id'=>'1','name'=>'Freddy Krueger VS Zombies', 'description'=>'Freddy Krueger VS Zombies Edible Cake Image Border <br> <strong>Usage:</strong> Rectangle Cakes <br><strong>Size:</strong> 10x7.5 Standar 1/4 Sheet  <br> <strong>Material:</strong> High Quality Sugar Sheet', 'file'=>'33.png', 'make'=>'1'],
-['cat_id'=>'6', 'size_id'=>'1','name'=>'', 'description'=>'Birthday Border 5', 'file'=>'34.png', 'make'=>'1'],
-['cat_id'=>'6', 'size_id'=>'1','name'=>'', 'description'=>'Birthday Border 5', 'file'=>'35.png', 'make'=>'1'],
-['cat_id'=>'6', 'size_id'=>'1','name'=>'', 'description'=>'Birthday Border 5', 'file'=>'36.png', 'make'=>'1'],
-['cat_id'=>'6', 'size_id'=>'1','name'=>'', 'description'=>'Birthday Border 5', 'file'=>'37.png', 'make'=>'1'],
-['cat_id'=>'6', 'size_id'=>'1','name'=>'', 'description'=>'Birthday Border 5', 'file'=>'38.png', 'make'=>'1'],
-['cat_id'=>'6', 'size_id'=>'1','name'=>'', 'description'=>'Birthday Border 5', 'file'=>'39.png', 'make'=>'1'],
-['cat_id'=>'6', 'size_id'=>'1','name'=>'', 'description'=>'Birthday Border 5', 'file'=>'40.png', 'make'=>'1'],
+['cat_id'=>'6', 'size_id'=>'1','name'=>'Zombie Corp', 'description'=>'Corporations make you turn in to a Zombie Edible Cake Image Border <br> <strong>Usage:</strong> Rectangle Cakes <br><strong>Size:</strong> 10x7.5 Standar 1/4 Sheet  <br> <strong>Material:</strong> High Quality Sugar Sheet', 'file'=>'34.png', 'make'=>'1'],
+['cat_id'=>'6', 'size_id'=>'1','name'=>'The Exorcist Returns', 'description'=>'Signs of Demonic Possession Edible Cake Image Border <br> <strong>Usage:</strong> Rectangle Cakes <br><strong>Size:</strong> 10x7.5 Standar 1/4 Sheet  <br> <strong>Material:</strong> High Quality Sugar Sheet', 'file'=>'35.png', 'make'=>'1'],
+// ['cat_id'=>'6', 'size_id'=>'1','name'=>'', 'description'=>'Birthday Border 5', 'file'=>'36.png', 'make'=>'1'],
+// ['cat_id'=>'6', 'size_id'=>'1','name'=>'', 'description'=>'Birthday Border 5', 'file'=>'37.png', 'make'=>'1'],
+// ['cat_id'=>'6', 'size_id'=>'1','name'=>'', 'description'=>'Birthday Border 5', 'file'=>'38.png', 'make'=>'1'],
+// ['cat_id'=>'6', 'size_id'=>'1','name'=>'', 'description'=>'Birthday Border 5', 'file'=>'39.png', 'make'=>'1'],
+// ['cat_id'=>'6', 'size_id'=>'1','name'=>'', 'description'=>'Birthday Border 5', 'file'=>'40.png', 'make'=>'1'],
 
 // // Super Heroes Rectangles
 // ['cat_id'=>'6', 'size_id'=>'1','name'=>'Super Heroes', 'description'=>'Birthday Border 1', 'file'=>'41.png', 'make'=>'1'],

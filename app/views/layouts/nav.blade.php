@@ -29,7 +29,7 @@ $categories = Category::where('active', '=', 1)->get();
 <li><a href="/categories/3">Cupcake & Cookie Cicles</a></li>
 <li><a href="/categories/4">Birthday</a></li>
 <li><a href="/categories/5">Action</a></li>
-
+<li><a href="/categories/6">Halloween</a></li>
           </ul>
         </li>
 

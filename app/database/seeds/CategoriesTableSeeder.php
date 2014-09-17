@@ -13,14 +13,14 @@ class CategoriesTableSeeder extends Seeder {
 
 		$items = array(
 
-	['border_id'=>'1', 'shape_id'=>'1', 'name'=>'Rectangle', 'description'=>'Standard 1/4 sheet, edible cake image decoration for pastries, cakes and edibles.', 'file'=>'rectangle_images.png', 'active'=>'1'],
-	['border_id'=>'2', 'shape_id'=>'1', 'name'=>'Circle', 'description'=>'Standard circular pre-cut edible printed images for cakes, mini cakes and jumbo cupcakes.', 'file'=>'round_images.png', 'active'=>'1'],
-	['border_id'=>'3', 'shape_id'=>'1', 'name'=>'Cupcakes', 'description'=>'Standard circular pre-cut cupcake, cookie and oreo cookie edible image decorations.', 'file'=>'cupcake_images.png', 'active'=>'1'],
-	['border_id'=>'4', 'shape_id'=>'1', 'name'=>'Birthday', 'description'=>'Fun birthday theme borders for edible cake image decorations.', 'file'=>'birthday.png', 'active'=>'1'],
-	['border_id'=>'5', 'shape_id'=>'1', 'name'=>'Action', 'description'=>'Cake borders for edible cake image decorations', 'file'=>'Action.png', 'active'=>'1'],
+	['border_id'=>'1', 'shape_id'=>'1', 'name'=>'Rectangle', 'description'=>'Personalize Standard 1/4 sheet, edible cake image decoration for pastries, cakes and edibles.', 'file'=>'rectangle_images.png', 'active'=>'1'],
+	['border_id'=>'2', 'shape_id'=>'1', 'name'=>'Circle', 'description'=>'Personalize Standard circular pre-cut edible printed images for cakes, mini cakes and jumbo cupcakes.', 'file'=>'round_images.png', 'active'=>'1'],
+	['border_id'=>'3', 'shape_id'=>'1', 'name'=>'Cupcakes', 'description'=>'Personalize Standard circular pre-cut cupcake, cookie and oreo cookie edible image decorations.', 'file'=>'cupcake_images.png', 'active'=>'1'],
+	['border_id'=>'4', 'shape_id'=>'1', 'name'=>'Birthday', 'description'=>'Customize Fun birthday theme borders for edible cake image decorations.', 'file'=>'birthday.png', 'active'=>'1'],
+	['border_id'=>'5', 'shape_id'=>'1', 'name'=>'Action', 'description'=>'Customize Action Theme Cake borders for cakes image decorations', 'file'=>'Action.png', 'active'=>'1'],
 	// ['border_id'=>'6', 'shape_id'=>'1', 'name'=>'Super heroes', 'description'=>'This is a princess Description', 'file'=>'super_heroe.png', 'active'=>'0'],
 	// ['border_id'=>'7', 'shape_id'=>'1', 'name'=>'Anniversary', 'description'=>'This is a princess Description', 'file'=>'anniversary.png', 'active'=>'0'],
-	// ['border_id'=>'8', 'shape_id'=>'1', 'name'=>'Halloween', 'description'=>'This is a princess Description', 'file'=>'halloween.png', 'active'=>'0'],
+	['border_id'=>'8', 'shape_id'=>'1', 'name'=>'Halloween', 'description'=>'Customize Holloween face masks and decorations for your scary cakes', 'file'=>'halloween.png', 'active'=>'0'],
 	// ['border_id'=>'9', 'shape_id'=>'1', 'name'=>'Christmas', 'description'=>'This is a princess Description', 'file'=>'christmas.png', 'active'=>'0'],
 	// ['border_id'=>'10', 'shape_id'=>'1', 'name'=>'Valentines', 'description'=>'This is a princess Description', 'file'=>'valentines.png', 'active'=>'0'],
 	// ['border_id'=>'11', 'shape_id'=>'1', 'name'=>'Easter', 'description'=>'This is a princess Description', 'file'=>'easter.png', 'active'=>'0'],

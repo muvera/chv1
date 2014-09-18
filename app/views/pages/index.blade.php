@@ -7,7 +7,7 @@
 <div class="row">
 	
 	<div class="col-md-4">
-		<h1>Create your own Edible Cake Image</h1>
+		<h1>Edible Cake Prints</h1>
 <ul><h4>
 	<li>2-3 Day delivery <small><a href="/policy">see details</a></small></li>
 </h4>
@@ -21,7 +21,7 @@
 </center>
 </div>
 
-<a href="/contact">Contact information: </a></br>
+<a href="/contact">Contact: </a></br>
 <strong>Hollywood:</strong> (818) 310-3652 <strong>Hours:</strong> 10AM-5PM <a href="mailto:cakehollywoodstore@gmail.com?Subject=Question"><strong>Email Us</strong></a>
 
 	</div>

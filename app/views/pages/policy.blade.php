@@ -54,7 +54,7 @@ We will replace defective products depending on the contingencies bellow.
 Only overnight shipping is refundable and have a process of 10 business days or more.
 
 <h3>Refunds</h3>
-If you have been refunded please allow 2-3 business days for refund to clear. Money orders may take 10 business days for arrival.
+If you have been refunded please allow 5-10 business days for refund to clear. Money orders may take 30 business days for arrival.
 <h3>Extra charge on your credit or debit card</h3>
 If you see an extra charge on your account that you did not authorized please do not be alarmed. You probably double clicked on the buy button. Extra charges will despair in 24 hours depending on your bank, if not than call us or call your bank.
 
@@ -64,6 +64,8 @@ All order placed before 12PM on regular business will go out except on special c
 All of the above are subject to change with out notice and cannot be combined.
 <br>
 <br>
+
+
 Policy updated on September 9, 2014
 
 @stop

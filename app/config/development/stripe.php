@@ -1,6 +1,6 @@
 <?php
 
 return [
-	'secret_key' => 'sk_test_4WKenReVTsNHblkmQo47OSBh',
-	'publishable_key' => 'pk_test_4WKenCrOeubak6ZrFXumzqYE'
+	'secret_key' => 'sk_live_4WKeKNmRQrHBTfHxR3nDdxR8',
+	'publishable_key' => 'pk_live_4WKed2i5JO2nF4wV4xPEUVZP'
 ];

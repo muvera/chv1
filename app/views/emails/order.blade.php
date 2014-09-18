@@ -23,7 +23,8 @@
   5507 Santa Monica Blvb, Suite 205<br>
   Hollywood, CA 90038<br>
   P: (818) 310-3652<br>
-  http://www.cakehollywood.com
+  cakehollywood.com<br>
+  cakehollywoodstore@gmail.com
   <br>
   <br>
   <strong>Bill To:</strong></br>
@@ -125,4 +126,10 @@ $shape = Size::findOrFail($value['size_id']);
 </tr>
 </table>
 <center>Thank you for ordering from Cake Hollywood. Your images will be processed and shipped if you order before 11-12 PM M-F PT(California Time). 
-TRACKING: A secondary email will be sent containing your tracking number or you may check the status of your order at our site by going to: http://cakehollywood.com/</center>
+<strong>TRACKING:</strong> A secondary email will be sent containing your tracking number or you may check the status of your order at http://cakehollywood.com/ and log in with your email & password</center>
+
+<br>
+<br>
+If you receive this email and you did not purchase nothing from our site, please don't panic and send us an email to cakehollwoodstore@gmail.com.
+
+

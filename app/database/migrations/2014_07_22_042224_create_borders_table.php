@@ -18,7 +18,7 @@ class CreateBordersTable extends Migration {
 			$table->string('cat_id');
 			$table->string('size_id');
 			$table->string('name');
-			$table->string('description');
+			$table->text('description');
 			$table->string('file');
 			$table->string('make');
 			$table->timestamps();

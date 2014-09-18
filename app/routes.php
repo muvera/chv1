@@ -48,6 +48,7 @@ Route::get('/', ['as'=>'home', 'uses'=>'PagesController@home']);
 Route::get('about', ['as'=>'about', 'uses'=>'PagesController@about']);
 Route::get('contact', ['as'=>'contact', 'uses'=>'PagesController@contact']);
 Route::get('policy', ['as'=>'policy', 'uses'=>'PagesController@policy']);
+Route::get('halloween_2014', ['as'=>'halloween_2014', 'uses'=>'PagesController@halloween']);
 
 # Administration
 Route::get('admin', ['before' => 'role:owner', 'uses' => 'AdminController@index']);

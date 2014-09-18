@@ -22,18 +22,23 @@ $categories = Category::where('active', '=', 1)->get();
      <ul class="nav navbar-nav">
 
         <li class="dropdown">
-          <a href="categories/" class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
+          <a href="" class="dropdown-toggle" data-toggle="dropdown">Photo Prints<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-<li><a href="/categories/1">Rectangle Cake</a></li>
-<li><a href="/categories/2">Round Cake</a></li>
-<li><a href="/categories/3">Cupcake & Cookie Cicles</a></li>
-<li><a href="/categories/4">Birthday</a></li>
-<li><a href="/categories/5">Action</a></li>
-<li><a href="/categories/6">Halloween</a></li>
+<li><a href="/categories/1">Rectangle Edible Print</a></li>
+<li><a href="/categories/2">Round Edible Print</a></li>
+<li><a href="/categories/3">Cupcake & Cookie Edible Print</a></li>
+
           </ul>
         </li>
 
-
+        <li class="dropdown">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown">Photo Borders<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+<li><a href="/categories/4">Birthday Borders</a></li>
+<li><a href="/categories/5">Action Borders</a></li>
+<li><a href="/categories/6">Halloween Borders</a></li>
+          </ul>
+        </li>
 
 
 

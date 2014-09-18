@@ -129,4 +129,15 @@ class PagesController extends \BaseController {
 	}
 
 
+		public function halloween()
+	{
+		
+
+		return View::make('pages.halloween_2014')
+				->with('title', '2014 Halloween Scary Movie Cakes - Instructions')
+				->with('meta_description', 'Customize Edible Halloween Images online for free, simply upload a photo and choose your favorite horror theme or horror face masks');
+
+	}
+
+
 }

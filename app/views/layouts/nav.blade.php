@@ -22,30 +22,47 @@ $categories = Category::where('active', '=', 1)->get();
      <ul class="nav navbar-nav">
 
         <li class="dropdown">
-          <a href="" class="dropdown-toggle" data-toggle="dropdown">Photo Prints<span class="caret"></span></a>
+          <a href="" class="dropdown-toggle" data-toggle="dropdown">Shapes<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-<li><a href="/categories/1">Rectangle Edible Print</a></li>
-<li><a href="/categories/2">Round Edible Print</a></li>
-<li><a href="/categories/3">Cupcake & Cookie Edible Print</a></li>
+<li><a href="/categories/1">Rectangle Shapes</a></li>
+<li><a href="/categories/2">Round Shapes</a></li>
+<li><a href="/categories/3">Heart Shapes</a></li>
+<li><a href="/categories/4">Star Shapes</a></li>
+<li><a href="/categories/5">Flower Shapes</a></li>
+<li><a href="/categories/6">Dimond Shapes</a></li>
+<li><a href="/categories/7">Emblem Shapes</a></li>
+<li><a href="/categories/8">Monogram Shapes</a></li>
+<li><a href="/categories/9">Oval Shapes</a></li>
+<li><a href="/categories/10">Square Shapes</a></li>
+<li><a href="/categories/11">Round Square Shapes</a></li>
+
 
           </ul>
         </li>
 
-        <li class="dropdown">
-          <a href="" class="dropdown-toggle" data-toggle="dropdown">Photo Borders<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-<li><a href="/categories/4">Birthday Borders</a></li>
-<li><a href="/categories/5">Action Borders</a></li>
-<li><a href="/categories/6">Halloween Borders</a></li>
-          </ul>
-        </li>
 
 
 
 
       </ul>
 
+     <ul class="nav navbar-nav">
 
+        <li class="dropdown">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown">Borders<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+<li><a href="/categories/12">Birthday</a></li>
+
+
+
+          </ul>
+        </li>
+
+
+
+
+
+      </ul>
 
 
 

@@ -9,5 +9,5 @@
 <a type="button" href="{{route('control', '7')}}" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-repeat"></span></a>
 </div>
 <a type="button" href="{{route('control', '8')}}" class="btn btn-default"> Reload</a>
-<a href="{{route('deleteimage', $border->file)}}" class="btn btn-default ">Delete</a>
+<a href="{{route('deleteimage', Paths::user_dir())}}" class="btn btn-default ">Delete</a>
 

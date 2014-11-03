@@ -49,6 +49,7 @@ Route::get('about', ['as'=>'about', 'uses'=>'PagesController@about']);
 Route::get('contact', ['as'=>'contact', 'uses'=>'PagesController@contact']);
 Route::get('policy', ['as'=>'policy', 'uses'=>'PagesController@policy']);
 Route::get('halloween_2014', ['as'=>'halloween_2014', 'uses'=>'PagesController@halloween']);
+Route::get('edible_shapes', ['as'=>'edible_shapes', 'uses'=>'PagesController@shapes']);
 
 # Administration
 Route::get('admin', ['before' => 'role:owner', 'uses' => 'AdminController@index']);
@@ -66,9 +67,12 @@ Route::get('buy', ['as'=>'buy', 'uses'=>'BuyController@index']);
 Route::post('buy', 'BuyController@buy');
 
 # System Routes
-Route::resource('categories','CategoriesController');
+Route::get('border/{id}',['as'=>'border.show', 'uses'=>'BordersController@show']);
 Route::resource('borders','BordersController');
+
+Route::resource('categories','CategoriesController');
 Route::resource('uploads','UploadsController');
+  // Upload
 Route::post('process',['as'=>'process', 'uses'=>'UploadsController@process']);
 # Control
 Route::get('control/{id}',['as'=>'control', 'uses'=>'ControlController@control']);
@@ -78,7 +82,7 @@ Route::get('deleteimage/{border}',['as'=>'deleteimage', 'uses'=>'UploadsControll
 
 # Cart
 Route::get('cart',['as'=>'cart', 'uses'=>'CartController@index']);
-Route::get('addtocart',['as'=>'addtocart', 'uses'=>'CartController@addtocart']);
+Route::get('addtocart/{id}/{size_id}/{user_dir}/{cat_id}/{border_id}/{image}',['as'=>'addtocart', 'uses'=>'CartController@addtocart']);
 Route::get('deletecart',['as'=>'deletecart', 'uses'=>'CartController@deletecart']);
 Route::post('deleteitem',['as'=>'deleteitem', 'uses'=>'CartController@deleteitem']);
 Route::post('additem', ['as'=>'additem', 'uses'=>'CartController@additem']);

@@ -24,6 +24,9 @@
 			"app/database/seeds",
 			"app/tests/TestCase.php",
 			"app/BorderFactory/",
+			"app/MariosCart/",
+			"app/ProductSessions/",
+			"app/ProductImages/",
 			"app/BorderFactory/EditControls",
 			"app/cakehollywood/"
 		],

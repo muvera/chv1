@@ -10,7 +10,7 @@ class ExifCommand extends AbstractCommand
      * Note: Windows PHP Users - in order to use this method you will need to
      * enable the mbstring and exif extensions within the php.ini file.
      *
-     * @param  Intervention\Image\Image $image
+     * @param  \Intervention\Image\Image $image
      * @return boolean
      */
     public function execute($image)
@@ -24,7 +24,7 @@ class ExifCommand extends AbstractCommand
         $key = $this->argument(0)->value();
 
         // try to read exif data from image file
-        $data = @exif_read_data($image->dirname .'/'. $image->basename, 'EXIF', false);
+        $data = @exif_read_data($image->dirname .'/'. $image->basename);
 
         if (! is_null($key) && is_array($data)) {
             $data = array_key_exists($key, $data) ? $data[$key] : false;

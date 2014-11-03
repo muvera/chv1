@@ -130,23 +130,20 @@ class BordersController extends \BaseController {
 		
 	}
 
-
-	#show
+# Show
 
 	public function show($id){
-
-				$border = Border::findOrFail($id);
-				$category = $border->cat_id;
-				$make = $border->make;
+		$border = Border::findOrFail($id);
+		$price = Size::where('id', '=', $border->size_id)->first();
 				
-				Session::put('cat_id', $category);
-				Session::put('border_id', $id);
-				Session::put('border_make', $make);
+		// New session for current product
+		ProductSessions::put($id, $border->cat_id, $border->size_id, $border->make, $border->file);
+		// Check upload, generate image, if no upload than leave as is. 
+		ProductImages::check();
 
 				return View::make('borders.show')
+					->with('price', $price)
 					->with('border', $border);
-
-
 	}
 
 #edit
@@ -181,7 +178,6 @@ class BordersController extends \BaseController {
 
 		return Redirect::to('/borders/'. $id );
 
-		return Redirect::back();
 		}
 
 

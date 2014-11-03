@@ -11,10 +11,10 @@ class CategoriesController extends \BaseController {
 	public function index()
 	{
 
-		return 'You are not allowed';
-		// $categories = Category::get();
-		// return View::make('categories.index')
-		// 		->with('categories', $categories);
+
+		$categories = Category::get();
+		return View::make('categories.index')
+				->with('categories', $categories);
 	}
 
 	/**

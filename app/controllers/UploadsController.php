@@ -3,6 +3,31 @@
 class UploadsController extends \BaseController {
 
 
+
+	public function process(){
+	# Apply Borders & Make Multiple Shapes
+	// 1. Make user folder if it dosent exists
+	// 2. Create borders & multiple shapes
+
+	// 1
+	SessionManager::makeFolder();
+
+	// 2
+	if (Session::get('border_make')==1) One::make();
+	if (Session::get('border_make')==2) Two::make();
+	if (Session::get('border_make')==4) Four::make();
+	if (Session::get('border_make')==6) Six::make();
+	if (Session::get('border_make')==8) Eight::make();
+	if (Session::get('border_make')==12) Twelve::make();
+	if (Session::get('border_make')==24) TwentyFour::make();
+		
+
+		return Redirect::back();
+
+
+		}
+
+
 	public function create()
 	{
 		return View::make('uploads.create');
@@ -28,36 +53,9 @@ class UploadsController extends \BaseController {
 			dd('ok');
 	}
 
-	public function process(){
-
-	if(Session::get('cat_id')==3){
-		# If the category changes make Circles
-		if(Session::get('border_make')==12){
-				SessionManager::makeFolder();
-				TwelveCircles::make();
-				}
-		if(Session::get('border_make')==8){
-				SessionManager::makeFolder();
-				EightCircles::make();
-				}
-		if(Session::get('border_make')==24){
-				SessionManager::makeFolder();
-				TwentyCircles::make();
-				}
-
-		return Redirect::back();
-
-	}else{
-		// make a folder or use the folder
-		SessionManager::makeFolder();
-		// Rund regular sheet class
-		RegularSheet::make();
-
-		return Redirect::back();
-					}
 
 
-		}
+
 
 			#Load uploaded Image to new design
 			public function loadimage($border_file){
@@ -90,24 +88,18 @@ class UploadsController extends \BaseController {
 			}
 
 			#Delete Image
-
-			public function deleteimage(){
-			
-					#delete sessions
-					// border File
-					Session::forget('border_file');
-					// border Id
-					Session::forget('border_id');
-					// Orginal File
-					Session::forget('upload');
-					// Generated image
-					Session::forget('process');
-					// thumbnail
-					Session::forget('thumbnail');
-					// Category Id
-					Session::forget('cat_id');
-					// Size Id
-					Session::forget('size_id');
+			public function deleteimage($dir){
+					$dir = public_path('uploads/' . $dir);
+					UploadConfig::deleteDirectory($dir);
+			Session::flush('filename');
+			Session::flush('dirname');
+			Session::flush('imagedata');
+			Session::flush('thumbdata');
+			Session::flush('user_dir');
+			Session::flush('cat_id');
+			Session::flush('border_id');
+			Session::flush('upload');
+			Session::flush('new_name');
 
 					return Redirect::back();
 

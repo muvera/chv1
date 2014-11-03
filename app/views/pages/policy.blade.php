@@ -2,10 +2,25 @@
 @section('content')
 
 <h2>Policy</h2>
-<p>In simple words “If it is our fault, we pay for it” if not than read agreement when using this website.</p>
-
 <p>Thank you for using our products</p>
 <hr>
+<div class="well">
+<h1>Payments & Charges <small>Google payment disclosure & ethics compliance</small></h1>
+<h3>You are paying for a product, software, service, convenience and shipping</h3>
+
+<strong>Products:</strong> Edible frosting sheets is a physical product that is manufactured for edible decorations.
+<br>
+<strong>Digital Products:</strong> Designs are free when you purchase directly from our us, For licensing please contac us directly cakehollywoodstore@gmail.com
+<br>
+<strong>Software:</strong> Our web app facilitates and presents your edible decorating creations in real time. Cake Hollywood has been developed from the ground up, We make and maintain our technology so you can make effortless a decoration for your pastries.
+<br>
+<strong>Service:</strong> Our designs are free when you purchase a product however we must make the machines work and process orders. As a consumer you benefit from a small service fee that is included in the price.
+<br>
+<strong>Convenience:</strong> Your edible products are packaged and shipped promptly as stated in our website to your location.
+<br>
+<strong>Shipping:</strong> We try to make our product the most afordable to balance the shipping pricess for your convenience. 
+</div>
+
 <h3>Shipping</h3>
 
 When we receive an order before 12AM PT (West Coast Time) on a regular business day we ship it. When the order is large or has been placed near the dead line the order might be sent the next business day.
@@ -33,6 +48,8 @@ USPS
 
 We understand that colors play a big role in your cake design, have in mind that colors may be off in some cases when the image has low resolution. Edible paper has a sugar surface that might attribute to color change as well.
 If you feel we made an error in the color pattern, please call and return the product for a replacement.
+
+<hr>
 
 <h3>Replacements</h3>
 

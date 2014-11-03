@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'muvera@gmail.com', 'name' => 'mario uvera'),
+	'from' => array('address' => 'cakehollywoodstore@gmail.com', 'name' => 'Cake Hollywood Store'),
 
 	/*
 	|--------------------------------------------------------------------------

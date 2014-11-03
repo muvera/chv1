@@ -17,11 +17,27 @@ class CreateBordersTable extends Migration {
 			$table->increments('id');
 			$table->string('cat_id');
 			$table->string('size_id');
+			$table->string('alias_name');
+			$table->string('alias_img');
 			$table->string('name');
 			$table->text('description');
 			$table->string('file');
 			$table->string('make');
+			// ADDED FIELDSAmazon Requires
+			$table->string('img');
+			$table->string('type');
+			$table->string('link');
+			$table->string('sku');
+			$table->string('price');
+			$table->string('upc');
+			$table->string('brand');
+			$table->string('weight');
+			$table->string('width');
+			$table->string('height');
+			$table->string('condition');
+			$table->string('ingredients');
 			$table->timestamps();
+
 		});
 	}
 

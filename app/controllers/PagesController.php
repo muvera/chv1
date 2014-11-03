@@ -14,7 +14,7 @@ class PagesController extends \BaseController {
 		$products = Product::get();
 		return View::make('pages.index')
 				->with('products', $products)
-				->with('title', 'Edible Image Decorations for Cakes')
+				->with('title', 'Edible Photo Printing & Design')
 				->with('meta_description', 'Customize Edible Images online for free, simply upload a photo and choose from hundreds of frames and face masks,  Edible cupcake images & Edible photos for cakes');
 
 	}
@@ -46,6 +46,8 @@ class PagesController extends \BaseController {
 		return View::make('pages.policy');
 				
 	}
+
+	
 
 
 

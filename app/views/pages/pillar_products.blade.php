@@ -1,7 +1,9 @@
 <div class="row">
 	<div class="col-md-3">
 		<center>
+			<a href="/border/1">
 		<img src="{{asset('/images/category/rectangle.jpg')}}" alt="Rectangle Photo Cakes Main Product" class="thumbnail img-responsive">
+			</a>
 		</center>
 		<small>
 		<ul><strong>Rectangle Size Options</strong>
@@ -17,7 +19,9 @@
 
 		<div class="col-md-3">
 			<center>
+				<a href="/border/8">
 		<img src="{{asset('/images/category/round.jpg')}}" alt="Round Photo Cakes Main Product" class="thumbnail img-responsive">
+				</a>
 	</center>
 	<small>
 	<ul><strong>Circle Size Options</strong>
@@ -32,7 +36,9 @@
 
 		<div class="col-md-3">
 			<center>
+				<a href="/border/14">
 		<img src="{{asset('/images/category/2/12_round_pieces.jpg')}}" alt="Cupcake Photo Cakes Main Product" class="thumbnail img-responsive">
+				</a>
 	</center>
 	<small>
 	<ul><strong>Circle Size Options</strong>
@@ -46,7 +52,9 @@
 
 		<div class="col-md-3">
 			<center>
+				<a href="/categories/5">
 		<img src="{{asset('/images/category/5/12_flower_pieces.jpg')}}" alt="Cookies Photo Cakes Main Product" class="thumbnail img-responsive">
+				</a>
 		</center>
 		<small>
 		<ul><strong>Shape Options</strong>

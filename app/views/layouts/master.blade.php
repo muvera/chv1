@@ -21,6 +21,7 @@
   </head>
 
 <body>
+  <a href="https://plus.google.com/113167468876412089341/" rel="publisher"></a>
 @include('layouts.nav')
 
    

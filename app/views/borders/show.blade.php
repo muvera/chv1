@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', strip_tags($border->name))
+@section('title', strip_tags($border->name .' ' . $border->alias_name))
 @section('meta_description', strip_tags($border->description))
 @section('content')
 <span itemscope itemtype="http://schema.org/Product">
@@ -13,7 +13,7 @@
 		</div>
 
 		<div class="col-md-5">
-			<h3 itemprop="name" >{{$border->name}}</h3>
+<h3 itemprop="name" >{{$border->name}} <small>{{$border->alias_name}}</small></h3>
 @include('borders.product')		
 		</div>
 					</div>

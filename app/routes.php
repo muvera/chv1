@@ -50,6 +50,7 @@ Route::get('contact', ['as'=>'contact', 'uses'=>'PagesController@contact']);
 Route::get('policy', ['as'=>'policy', 'uses'=>'PagesController@policy']);
 Route::get('halloween_2014', ['as'=>'halloween_2014', 'uses'=>'PagesController@halloween']);
 Route::get('edible_shapes', ['as'=>'edible_shapes', 'uses'=>'PagesController@shapes']);
+Route::get('ediblesoft', ['as'=>'ediblesoft', 'uses'=>'PagesController@ediblesoft']);
 
 # Administration
 Route::get('admin', ['before' => 'role:owner', 'uses' => 'AdminController@index']);

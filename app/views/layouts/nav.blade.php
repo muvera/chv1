@@ -14,7 +14,7 @@ $categories = Category::where('active', '=', 1)->get();
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/"><img src="{{asset('assets/logo.png')}}" alt="CakeHollywood"></a>
+          <a class="navbar-brand" href="/"><img id="_logo7" itemprop="logo" src="{{asset('assets/logo.png')}}" alt="CakeHollywood"></a>
         </div>
         <div class="collapse navbar-collapse">
 

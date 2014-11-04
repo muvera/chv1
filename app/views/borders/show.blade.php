@@ -2,7 +2,7 @@
 @section('title', strip_tags($border->name))
 @section('meta_description', strip_tags($border->description))
 @section('content')
-
+<span itemscope itemtype="http://schema.org/Product">
 		<div class="row">
 
 		<div class="col-md-5">
@@ -13,7 +13,7 @@
 		</div>
 
 		<div class="col-md-5">
-			<h3>{{$border->name}}</h3>
+			<h3 itemprop="name" >{{$border->name}}</h3>
 @include('borders.product')		
 		</div>
 					</div>

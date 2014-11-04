@@ -13,7 +13,8 @@ $related_size = Border::where('cat_id', '=', $cat_id)->get();
 @foreach($related_size as $related)
 		@if($border->id == $related->id)
         <div class="item active">
-        	<a href="{{route('borders.show', $related->id)}}">
+
+        	<a itemprop="url" href="{{route('borders.show', $related->id)}}">
    <img src="{{asset('/images/category/'. $cat_id . '/'. $border->img)}}" width="400px">
    			</a>
     	</div>

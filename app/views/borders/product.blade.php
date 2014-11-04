@@ -39,14 +39,14 @@
 	<center>
 	<strong>Product Sample</strong>
 	<br>
-	<img src="{{asset('/images/category/'. $border->cat_id . '/' .$border->img)}}" alt="{{$border->img}}" width="300">
+	<img itemprop="image" src="{{asset('/images/category/'. $border->cat_id . '/' .$border->img)}}" alt="{{$border->img}}" width="300">
 	<br>
 <small>
 Upload an image to view a real time sample
 </small>
 	</center>
 </div>
-<h4>Price: ${{$price->base_price}}</h4>
+<h4 itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price">Price</span>: ${{$price->base_price}}</h4>
 <a href="" class="btn btn-default btn-lg btn-block  disabled"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a>
 
 @include('borders.details')

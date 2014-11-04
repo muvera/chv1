@@ -24,7 +24,7 @@
         </tr>
 
         <tr>
-        	<td colspan="7">Description: {{$border->description}}	</td>
+        	<td colspan="7"><span itemprop="description">Description: {{$border->description}}	</span></td>
         
         </tr>
 

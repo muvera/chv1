@@ -47,6 +47,15 @@ class PagesController extends \BaseController {
 				
 	}
 
+
+	public function ediblesoft()
+	{
+		
+
+		$products = Product::get();
+		return View::make('pages.ediblesoft');
+				
+	}
 	
 
 

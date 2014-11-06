@@ -1,0 +1,1 @@
+/vagrant/cakehollywood/app/views/trends/create.blade.php

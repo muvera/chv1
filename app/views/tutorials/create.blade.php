@@ -1,0 +1,1 @@
+/vagrant/cakehollywood/app/views/tutorials/create.blade.php

@@ -52,6 +52,18 @@ Route::get('halloween_2014', ['as'=>'halloween_2014', 'uses'=>'PagesController@h
 Route::get('edible_shapes', ['as'=>'edible_shapes', 'uses'=>'PagesController@shapes']);
 Route::get('ediblesoft', ['as'=>'ediblesoft', 'uses'=>'PagesController@ediblesoft']);
 
+# Articles
+Route::resource('articles', 'ArticlesController');
+Route::get('/all_articles', ['as'=>'all_articles', 'uses'=>'ArticlesController@index']);
+
+# Tutorials
+Route::resource('tutorials', 'TutorialsController');
+Route::get('/all_tutorials', ['as'=>'all_articles', 'uses'=>'TutorialsController@index']);
+
+# Trends
+Route::resource('trends', 'TrendsController');
+Route::get('/analytics', ['as'=>'analytics', 'uses'=>'TrendsController@index']);
+
 # Administration
 Route::get('admin', ['before' => 'role:owner', 'uses' => 'AdminController@index']);
 Route::get('adminorderindex', ['before' => 'role:owner', 'as'=>'adminorderindex', 'uses' => 'AdminController@orderindex']);
@@ -122,6 +134,8 @@ Route::get('addresses/{user}/edit',['as'=>'addresses.edit', 'uses'=>'AddressesCo
 # Products
 Route::resource('products', 'ProductsController');
 Route::get('/product/{id}', array('as'=>'product', 'uses'=>'ProductsController@show'));
+
+
 
 
 

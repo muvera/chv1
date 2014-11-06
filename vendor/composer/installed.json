@@ -2003,5 +2003,47 @@
             "thumbnail",
             "watermark"
         ]
+    },
+    {
+        "name": "yangqi/htmldom",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yangqi/Htmldom.git",
+            "reference": "9abebd93f657a650b4e221a0bef0dc730d81fee5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yangqi/Htmldom/zipball/9abebd93f657a650b4e221a0bef0dc730d81fee5",
+            "reference": "9abebd93f657a650b4e221a0bef0dc730d81fee5",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2014-10-06 19:08:02",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Yangqi\\Htmldom": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "yangqi",
+                "email": "i@yangqi.me"
+            }
+        ],
+        "description": "Simple Html Dom Parser for Laravel 4",
+        "keywords": [
+            "HTML Parser",
+            "laravel"
+        ]
     }
 ]
